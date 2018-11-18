@@ -1,0 +1,34 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orionprateek/react-boilerplate.git"
+  },
+  "author": "Prateek Pandey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orionprateek/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/orionprateek/react-boilerplate#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.3.1",
+    "semantic-ui-react": "^0.82.2",
+    "superagent": "^3.8.3",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.11.3"
+  }
+}

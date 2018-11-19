@@ -31,7 +31,7 @@ class App extends Component {
      var url = 'https://api.github.com/repos/'+this.state.url+'/issues'
      request
       .get(url)
-      .then(res => {/
+      .then(res => {
         var linkData = res.header.link.split(',')
         var totalPages = 0;
         linkData.map((item, key)=>{

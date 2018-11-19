@@ -4,7 +4,7 @@ const express = require('express')
     , app = express();
 
 //routes
-// const registration = require('./routes/registration.js')
+const fetchData = require('./routes/fetchData.js')
 
 
 // setting up the required headers for any HTTP request-response
@@ -27,6 +27,6 @@ app.use(express.static('./../'));
 app.use('/',(req,res,next)=>{
   console.log('inside routes');
   next();
-});
+}, fetchData);
 
 module.exports = app;

@@ -31,8 +31,7 @@ class App extends Component {
      var url = 'https://api.github.com/repos/'+this.state.url+'/issues'
      request
       .get(url)
-      .then(res => {
-        console.log('Header Link: ', res.headers.link);
+      .then(res => {/
         var linkData = res.header.link.split(',')
         var totalPages = 0;
         linkData.map((item, key)=>{
@@ -67,7 +66,6 @@ class App extends Component {
                      var currentDate = new Date();
                      var timeDiff = currentDate.getTime() - issueCreationDate.getTime();
                      var daysDiff = timeDiff / (1000 * 3600 * 24);
-                     console.log('Index: ', index);
                      if(daysDiff < 1){
                        today.push(issue)
                      }
